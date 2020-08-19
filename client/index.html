@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Web Push Notification</title>
+
+        <style>
+            button {
+                display: block;
+                width: 192px;
+                background: #666;
+                color: white;
+                font-weight: bold;
+                padding: 0.5em;
+                cursor: pointer;
+                margin: 1em;
+            }
+
+            button:hover {
+                background: #444;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Web Push Notification using Node Js</h2>
+
+        <button onclick="register()">REGISTER</button>
+
+        <button onclick="subscribe()">SUBSCRIBE</button>
+
+        <button onclick="notify()">NOTIFY</button>
+
+        <script src="client.js"></script>
+    </body>
+</html>
