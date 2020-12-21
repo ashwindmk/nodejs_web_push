@@ -1,10 +1,10 @@
+'use strict';
 
 const publicVapidKey = 'BJRGj23i9Bn08Ax7QR1M40LnFUA_81tvR5Dt6igPQbwLakS5gEITcxWgQ73E8VAu2AT6Y0Zi4k3uTxXTTRfO79k';
 
 window.addEventListener('load', (e) => {
     console.log('Page loaded');
     register();
-    //subscribe();
 });
 
 // Check for service worker

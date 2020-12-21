@@ -1,4 +1,16 @@
-console.log('Service worker loaded');
+'use strict';
+
+const TAG = 'Service-worker';
+
+console.log(TAG + ': loaded');
+
+self.addEventListener('install', (e) => {
+    console.log(TAG + ': install');
+});
+
+self.addEventListener('activate', (e) => {
+    console.log(TAG + ': activate (target: ' + e.target + ', type: ' + e.type + ')');
+});
 
 self.addEventListener('push', (e) => {
     let data;
@@ -10,7 +22,7 @@ self.addEventListener('push', (e) => {
         };
     }
 
-    console.log('Push received: ' + JSON.stringify(data));
+    console.log(TAG + ': push: ' + JSON.stringify(data));
     
     self.registration.showNotification(data.title, {
         body: 'Notified by Ashwin Dinesh',
